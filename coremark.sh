@@ -27,8 +27,10 @@ cp $BASEDIR/../common/encoding.h $BASEDIR/coremark/common/
 cp $BASEDIR/../common/strcmp.S $BASEDIR/coremark/common/
 cp $BASEDIR/../common/syscalls.c $BASEDIR/coremark/common/
 cp $BASEDIR/../common/ee_printf.c $BASEDIR/coremark/common/
-cp $BASEDIR/../common/core_portme.* $BASEDIR/coremark/common/
+cp $BASEDIR/../common/core_portme.c $BASEDIR/coremark/common/
+cp $BASEDIR/../common/core_portme.h $BASEDIR/coremark/common/
+cp $BASEDIR/../common/coremark.mak $BASEDIR/coremark/Makefile
 
 cd $BASEDIR/coremark
 
-make PORT_DIR=$BASEDIR/coremark/common
+make
